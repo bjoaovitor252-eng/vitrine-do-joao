@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vitrina do João | Achadinhos Shopee</title>
+<meta name="description" content="Achadinhos, ofertas e produtos selecionados da Shopee.">
+<style>
+:root{--bg:#f5f6fa;--card:#fff;--text:#17181c;--muted:#6b7280;--accent:#ee4d2d;--dark:#111827}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(135deg,#111827,#252d3d);color:#fff;padding:42px 18px 34px;text-align:center}
+.logo{font-size:34px;font-weight:900;letter-spacing:-1px} header p{margin:9px 0 0;color:#d1d5db}
+.wrap{max-width:1100px;margin:auto;padding:22px 16px 50px}
+.search{width:100%;padding:15px 17px;border:0;border-radius:14px;box-shadow:0 4px 18px #00000010;font-size:16px;outline:0}
+.filters{display:flex;gap:9px;overflow:auto;padding:16px 0 10px}
+.filters button{white-space:nowrap;border:0;border-radius:999px;padding:10px 15px;background:#fff;color:#374151;cursor:pointer;font-weight:700}
+.filters button.active,.filters button:hover{background:var(--accent);color:#fff}
+.section-title{display:flex;justify-content:space-between;align-items:end;margin:18px 0 14px}
+.section-title h2{margin:0;font-size:23px} .section-title span{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 5px 22px #0000000d;transition:.18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 9px 28px #00000015}
+.thumb{height:155px;background:linear-gradient(135deg,#fff1ed,#f8fafc);display:grid;place-items:center;font-size:54px}
+.card-body{padding:15px} .tag{font-size:11px;text-transform:uppercase;font-weight:800;color:var(--accent)}
+h3{margin:7px 0 5px;font-size:18px} .card p{margin:0 0 14px;color:var(--muted);font-size:13px}
+.buy{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;padding:11px;border-radius:11px}
+footer{text-align:center;color:#6b7280;font-size:12px;padding:10px 20px 30px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🛍️ Vitrina do João</div>
+  <p>Achadinhos • Ofertas • Produtos que valem a pena</p>
+</header>
+<main class="wrap">
+  <input id="search" class="search" placeholder="🔎  Pesquisar produto..." aria-label="Pesquisar produto">
+  <div class="filters" id="filters">
+    <button class="active" data-filter="Todos">Todos</button>
+    <button data-filter="Casa & Cozinha">🏠 Casa & Cozinha</button>
+    <button data-filter="Fitness">💪 Fitness</button>
+    <button data-filter="Ferramentas">🔧 Ferramentas</button>
+    <button data-filter="Moda">👕 Moda</button>
+    <button data-filter="Beleza">💄 Beleza</button>
+    <button data-filter="Eletrônicos">📱 Eletrônicos</button>
+  </div>
+  <div class="section-title"><h2>🔥 Achadinhos em destaque</h2><span id="count">18 produtos</span></div>
+  <section class="grid" id="grid">      <article class="card" data-name="Produto 01" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 01</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/qxei41mz?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 02" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 02</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/nq9r6nt4?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 03" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 03</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/zeg1rkho?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 04" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 04</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/zte5cqdm?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 05" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 05</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/ecrmuqxp?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 06" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 06</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/3hhinmha?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 07" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 07</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/0fjzl9wo?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 08" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 08</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/oy0bguaq?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 09" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 09</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/nfvggax0?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 10" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 10</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/b240iitu?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 11" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 11</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/jnidm2ld?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 12" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 12</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/uxhbpd8r?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 13" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 13</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/rs0wnxgd?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 14" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 14</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/5ifif0ii?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 15" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 15</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/h1t4gjhe?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 16" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 16</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/rdex9ffi?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 17" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 17</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/2u2y0qxx?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+      <article class="card" data-name="Produto 18" data-category="Todos">
+        <div class="thumb">🛍️</div>
+        <div class="card-body">
+          <span class="tag">Achadinho</span>
+          <h3>Produto 18</h3>
+          <p>Confira este produto na Shopee.</p>
+          <a class="buy" href="https://br.shp.ee/1wfqxv8q?fromSource=copy_link&smtt=0.0.9" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        </div>
+      </article>
+  </section>
+</main>
+<footer>Links de divulgação/afiliado da Shopee • Sempre confira preço e condições na Shopee.</footer>
+<script>
+const cards=[...document.querySelectorAll('.card')], search=document.querySelector('#search'), count=document.querySelector('#count');
+let filter='Todos';
+function render(){
+  const q=search.value.toLowerCase();
+  let n=0;
+  cards.forEach(c=>{
+    const ok=(filter==='Todos'||c.dataset.category===filter)&&(c.dataset.name.toLowerCase().includes(q));
+    c.style.display=ok?'':'none'; if(ok)n++;
+  });
+  count.textContent=n+' produto'+(n===1?'':'s');
+}
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));
+ b.classList.add('active'); filter=b.dataset.filter; render();
+});
+search.oninput=render;
+</script>
+</body>
+</html>
